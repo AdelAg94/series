@@ -135,11 +135,13 @@
             })
         })
         $("#next").click(function(){
+            playAudio()
             var next_ep = parseInt(vid_ep_id) + 1
             var next_select = ".ep-no[epid='" + next_ep + "']"
             $(next_select).trigger('click')
         })
         $("#prev").click(function(){
+            playAudio()
             var prev_ep = parseInt(vid_ep_id) - 1
             var prev_select = ".ep-no[epid='" + prev_ep + "']"
             $(prev_select).trigger('click')
